@@ -9,7 +9,7 @@ namespace ControleAlunos.Dominio.Entidades
         public string Nome { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public double MediaGlobal { get; set; }
-        public Formacao Formacao { get; set; }
-        public Curso Curso { get; set; }
+        public FormacaoEnum Formacao { get; set; }
+        public CursoEnum Curso { get; set; }
     }
 }

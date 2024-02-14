@@ -28,67 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
+            textBoxMatricula = new TextBox();
+            textBoxEmail = new TextBox();
+            textBoxMediaGlobal = new TextBox();
+            textBoxNome = new TextBox();
+            comboBoxCurso = new ComboBox();
+            comboBoxFormacao = new ComboBox();
             label1 = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
             label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
             button1 = new Button();
             button2 = new Button();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
-            // textBox1
+            // textBoxMatricula
             // 
-            textBox1.Location = new Point(120, 3);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(176, 23);
-            textBox1.TabIndex = 0;
+            textBoxMatricula.Location = new Point(120, 3);
+            textBoxMatricula.Name = "textBoxMatricula";
+            textBoxMatricula.Size = new Size(176, 23);
+            textBoxMatricula.TabIndex = 0;
             // 
-            // textBox2
+            // textBoxEmail
             // 
-            textBox2.Location = new Point(120, 105);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(176, 23);
-            textBox2.TabIndex = 1;
+            textBoxEmail.Location = new Point(120, 105);
+            textBoxEmail.Name = "textBoxEmail";
+            textBoxEmail.Size = new Size(176, 23);
+            textBoxEmail.TabIndex = 1;
             // 
-            // textBox3
+            // textBoxMediaGlobal
             // 
-            textBox3.Location = new Point(120, 156);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(176, 23);
-            textBox3.TabIndex = 2;
+            textBoxMediaGlobal.Location = new Point(120, 156);
+            textBoxMediaGlobal.Name = "textBoxMediaGlobal";
+            textBoxMediaGlobal.Size = new Size(176, 23);
+            textBoxMediaGlobal.TabIndex = 2;
             // 
-            // textBox4
+            // textBoxNome
             // 
-            textBox4.Location = new Point(120, 54);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(176, 23);
-            textBox4.TabIndex = 3;
+            textBoxNome.Location = new Point(120, 54);
+            textBoxNome.Name = "textBoxNome";
+            textBoxNome.Size = new Size(176, 23);
+            textBoxNome.TabIndex = 3;
             // 
-            // comboBox1
+            // comboBoxCurso
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(120, 258);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(176, 23);
-            comboBox1.TabIndex = 4;
+            comboBoxCurso.FormattingEnabled = true;
+            comboBoxCurso.Location = new Point(120, 258);
+            comboBoxCurso.Name = "comboBoxCurso";
+            comboBoxCurso.Size = new Size(176, 23);
+            comboBoxCurso.TabIndex = 4;
             // 
-            // comboBox2
+            // comboBoxFormacao
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(120, 207);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(176, 23);
-            comboBox2.TabIndex = 5;
+            comboBoxFormacao.FormattingEnabled = true;
+            comboBoxFormacao.Location = new Point(120, 207);
+            comboBoxFormacao.Name = "comboBoxFormacao";
+            comboBoxFormacao.Size = new Size(176, 23);
+            comboBoxFormacao.TabIndex = 5;
             // 
             // label1
             // 
@@ -105,17 +105,17 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 75F));
             tableLayoutPanel1.Controls.Add(label6, 0, 5);
-            tableLayoutPanel1.Controls.Add(comboBox1, 1, 5);
+            tableLayoutPanel1.Controls.Add(comboBoxCurso, 1, 5);
             tableLayoutPanel1.Controls.Add(label5, 0, 4);
             tableLayoutPanel1.Controls.Add(label4, 0, 3);
             tableLayoutPanel1.Controls.Add(label3, 0, 2);
             tableLayoutPanel1.Controls.Add(label2, 0, 1);
-            tableLayoutPanel1.Controls.Add(textBox3, 1, 3);
+            tableLayoutPanel1.Controls.Add(textBoxMediaGlobal, 1, 3);
             tableLayoutPanel1.Controls.Add(label1, 0, 0);
-            tableLayoutPanel1.Controls.Add(textBox1, 1, 0);
-            tableLayoutPanel1.Controls.Add(textBox2, 1, 2);
-            tableLayoutPanel1.Controls.Add(textBox4, 1, 1);
-            tableLayoutPanel1.Controls.Add(comboBox2, 1, 4);
+            tableLayoutPanel1.Controls.Add(textBoxMatricula, 1, 0);
+            tableLayoutPanel1.Controls.Add(textBoxEmail, 1, 2);
+            tableLayoutPanel1.Controls.Add(textBoxNome, 1, 1);
+            tableLayoutPanel1.Controls.Add(comboBoxFormacao, 1, 4);
             tableLayoutPanel1.Location = new Point(12, 12);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 6;
@@ -128,32 +128,14 @@
             tableLayoutPanel1.Size = new Size(471, 308);
             tableLayoutPanel1.TabIndex = 7;
             // 
-            // label2
+            // label6
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(3, 51);
-            label2.Name = "label2";
-            label2.Size = new Size(40, 15);
-            label2.TabIndex = 7;
-            label2.Text = "Nome";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(3, 102);
-            label3.Name = "label3";
-            label3.Size = new Size(36, 15);
-            label3.TabIndex = 8;
-            label3.Text = "Email";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(3, 153);
-            label4.Name = "label4";
-            label4.Size = new Size(77, 15);
-            label4.TabIndex = 9;
-            label4.Text = "Média Global";
+            label6.AutoSize = true;
+            label6.Location = new Point(3, 255);
+            label6.Name = "label6";
+            label6.Size = new Size(38, 15);
+            label6.TabIndex = 11;
+            label6.Text = "Curso";
             // 
             // label5
             // 
@@ -164,14 +146,32 @@
             label5.TabIndex = 10;
             label5.Text = "Formação";
             // 
-            // label6
+            // label4
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(3, 255);
-            label6.Name = "label6";
-            label6.Size = new Size(38, 15);
-            label6.TabIndex = 11;
-            label6.Text = "Curso";
+            label4.AutoSize = true;
+            label4.Location = new Point(3, 153);
+            label4.Name = "label4";
+            label4.Size = new Size(77, 15);
+            label4.TabIndex = 9;
+            label4.Text = "Média Global";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(3, 102);
+            label3.Name = "label3";
+            label3.Size = new Size(36, 15);
+            label3.TabIndex = 8;
+            label3.Text = "Email";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(3, 51);
+            label2.Name = "label2";
+            label2.Size = new Size(40, 15);
+            label2.TabIndex = 7;
+            label2.Text = "Nome";
             // 
             // button1
             // 
@@ -181,6 +181,7 @@
             button1.TabIndex = 8;
             button1.Text = "Cancelar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += Ao_Clicar_Cancelar;
             // 
             // button2
             // 
@@ -190,6 +191,7 @@
             button2.TabIndex = 9;
             button2.Text = "Salvar";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += Ao_Clicar_Salvar;
             // 
             // CadastroAluno
             // 
@@ -208,12 +210,12 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private TextBox textBoxMatricula;
+        private TextBox textBoxEmail;
+        private TextBox textBoxMediaGlobal;
+        private TextBox textBoxNome;
+        private ComboBox comboBoxCurso;
+        private ComboBox comboBoxFormacao;
         private Label label1;
         private TableLayoutPanel tableLayoutPanel1;
         private Label label2;

@@ -9,23 +9,23 @@ namespace ControleAlunos.InteracaoUsuarioForms
         private readonly IRepositorio _repositorio;
         public ListagemAlunos(IRepositorio repositorio)
         {
-            _repositorio = repositorio;
             InitializeComponent();
+            _repositorio = repositorio;
+            AtualizarGrid();
+        }
+
+        private void AtualizarGrid()
+        {
+            ListaAlunos.DataSource = null;
+            ListaAlunos.DataSource = _repositorio.ObterTodos();
         }
 
         private void Ao_Clicar_Em_Adicionar(object sender, EventArgs e)
         {
-            var aluno = new Aluno
-            {
-                Matricula = 202400432,
-                Nome = "Lucas Moreira Iglesias",
-                Email = "lucas_iglesias@discente.ufg.br",
-                MediaGlobal = 8.5,
-                Formacao = Formacao.Bacharelado,
-                Curso = Curso.SI
-            };
-
-            _repositorio.Criar(aluno);
+            var telaCadastro = new CadastroAluno(_repositorio);
+            telaCadastro.ShowDialog();
+            telaCadastro.Close();
+            AtualizarGrid();
         }
     }
 }

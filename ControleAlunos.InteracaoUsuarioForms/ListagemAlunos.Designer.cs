@@ -28,20 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            ListaAlunos = new DataGridView();
             botaoRemover = new Button();
             botaoEditar = new Button();
             botaoAdicionar = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ListaAlunos).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // ListaAlunos
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 12);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(776, 390);
-            dataGridView1.TabIndex = 0;
+            ListaAlunos.AllowUserToResizeRows = false;
+            ListaAlunos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            ListaAlunos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            ListaAlunos.Location = new Point(12, 12);
+            ListaAlunos.MultiSelect = false;
+            ListaAlunos.Name = "ListaAlunos";
+            ListaAlunos.ReadOnly = true;
+            ListaAlunos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            ListaAlunos.Size = new Size(776, 390);
+            ListaAlunos.TabIndex = 0;
             // 
             // botaoRemover
             // 
@@ -75,20 +80,22 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 450);
             Controls.Add(botaoAdicionar);
             Controls.Add(botaoEditar);
             Controls.Add(botaoRemover);
-            Controls.Add(dataGridView1);
+            Controls.Add(ListaAlunos);
+            MaximizeBox = false;
             Name = "ListagemAlunos";
             Text = "Listagem de Alunos";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ListaAlunos).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView ListaAlunos;
         private Button botaoRemover;
         private Button botaoEditar;
         private Button botaoAdicionar;

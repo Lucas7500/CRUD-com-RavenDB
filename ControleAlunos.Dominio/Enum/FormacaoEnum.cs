@@ -1,6 +1,6 @@
 ﻿namespace ControleAlunos.Dominio.Enum
 {
-    public enum Formacao
+    public enum FormacaoEnum
     {
         Bacharelado,
         Licenciatura,

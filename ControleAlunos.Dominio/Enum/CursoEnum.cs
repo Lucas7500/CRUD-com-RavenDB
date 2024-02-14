@@ -2,7 +2,7 @@
 
 namespace ControleAlunos.Dominio.Enum
 {
-    public enum Curso
+    public enum CursoEnum
     {
         [Description("Sistemas de Informação")]
         SI,
