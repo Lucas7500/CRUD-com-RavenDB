@@ -41,8 +41,8 @@
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            botaoCancelar = new Button();
+            botaoSalvar = new Button();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -58,21 +58,21 @@
             textBoxEmail.Location = new Point(120, 105);
             textBoxEmail.Name = "textBoxEmail";
             textBoxEmail.Size = new Size(176, 23);
-            textBoxEmail.TabIndex = 1;
+            textBoxEmail.TabIndex = 2;
             // 
             // textBoxMediaGlobal
             // 
             textBoxMediaGlobal.Location = new Point(120, 156);
             textBoxMediaGlobal.Name = "textBoxMediaGlobal";
             textBoxMediaGlobal.Size = new Size(176, 23);
-            textBoxMediaGlobal.TabIndex = 2;
+            textBoxMediaGlobal.TabIndex = 3;
             // 
             // textBoxNome
             // 
             textBoxNome.Location = new Point(120, 54);
             textBoxNome.Name = "textBoxNome";
             textBoxNome.Size = new Size(176, 23);
-            textBoxNome.TabIndex = 3;
+            textBoxNome.TabIndex = 1;
             // 
             // comboBoxCurso
             // 
@@ -80,7 +80,7 @@
             comboBoxCurso.Location = new Point(120, 258);
             comboBoxCurso.Name = "comboBoxCurso";
             comboBoxCurso.Size = new Size(176, 23);
-            comboBoxCurso.TabIndex = 4;
+            comboBoxCurso.TabIndex = 5;
             // 
             // comboBoxFormacao
             // 
@@ -88,7 +88,7 @@
             comboBoxFormacao.Location = new Point(120, 207);
             comboBoxFormacao.Name = "comboBoxFormacao";
             comboBoxFormacao.Size = new Size(176, 23);
-            comboBoxFormacao.TabIndex = 5;
+            comboBoxFormacao.TabIndex = 4;
             // 
             // label1
             // 
@@ -125,7 +125,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tableLayoutPanel1.Size = new Size(471, 308);
+            tableLayoutPanel1.Size = new Size(471, 309);
             tableLayoutPanel1.TabIndex = 7;
             // 
             // label6
@@ -173,34 +173,36 @@
             label2.TabIndex = 7;
             label2.Text = "Nome";
             // 
-            // button1
+            // botaoCancelar
             // 
-            button1.Location = new Point(363, 327);
-            button1.Name = "button1";
-            button1.Size = new Size(120, 33);
-            button1.TabIndex = 8;
-            button1.Text = "Cancelar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += Ao_Clicar_Cancelar;
+            botaoCancelar.Location = new Point(363, 327);
+            botaoCancelar.Name = "botaoCancelar";
+            botaoCancelar.Size = new Size(120, 33);
+            botaoCancelar.TabIndex = 7;
+            botaoCancelar.Text = "Cancelar";
+            botaoCancelar.UseVisualStyleBackColor = true;
+            botaoCancelar.Click += Ao_Clicar_Cancelar;
             // 
-            // button2
+            // botaoSalvar
             // 
-            button2.Location = new Point(12, 327);
-            button2.Name = "button2";
-            button2.Size = new Size(120, 33);
-            button2.TabIndex = 9;
-            button2.Text = "Salvar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += Ao_Clicar_Salvar;
+            botaoSalvar.Location = new Point(12, 327);
+            botaoSalvar.Name = "botaoSalvar";
+            botaoSalvar.Size = new Size(120, 33);
+            botaoSalvar.TabIndex = 6;
+            botaoSalvar.Text = "Salvar";
+            botaoSalvar.UseVisualStyleBackColor = true;
+            botaoSalvar.Click += Ao_Clicar_Salvar;
             // 
             // CadastroAluno
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(495, 372);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(botaoSalvar);
+            Controls.Add(botaoCancelar);
             Controls.Add(tableLayoutPanel1);
+            MaximizeBox = false;
             Name = "CadastroAluno";
             Text = "CadastroAluno";
             tableLayoutPanel1.ResumeLayout(false);
@@ -223,7 +225,7 @@
         private Label label4;
         private Label label6;
         private Label label5;
-        private Button button1;
-        private Button button2;
+        private Button botaoCancelar;
+        private Button botaoSalvar;
     }
 }

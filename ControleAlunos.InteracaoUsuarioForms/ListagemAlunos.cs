@@ -22,10 +22,39 @@ namespace ControleAlunos.InteracaoUsuarioForms
 
         private void Ao_Clicar_Em_Adicionar(object sender, EventArgs e)
         {
-            var telaCadastro = new CadastroAluno(_repositorio);
+            var telaCadastro = new CadastroAluno();
             telaCadastro.ShowDialog();
-            telaCadastro.Close();
-            AtualizarGrid();
+            
+            if (telaCadastro.DialogResult == DialogResult.OK) 
+            {
+                _repositorio.Criar(CadastroAluno.alunoPreenchido);
+                AtualizarGrid();
+            }
+        }
+
+        private void Ao_Clicar_Editar(object sender, EventArgs e)
+        {
+            var aluno = _repositorio.ObterPorId(ListaAlunos.CurrentRow.Cells["colunaId"].Value.ToString());
+            var telaCadastro = new CadastroAluno(aluno);
+            telaCadastro.ShowDialog();
+
+            if (telaCadastro.DialogResult == DialogResult.OK)
+            {
+                _repositorio.Editar(CadastroAluno.alunoPreenchido);
+                AtualizarGrid();
+            }
+        }
+
+        private void Ao_Clicar_Remover(object sender, EventArgs e)
+        {
+            var aluno = _repositorio.ObterPorId(ListaAlunos.CurrentRow.Cells["colunaId"].Value.ToString());
+            var confirmacaoRemocao = MessageBox.Show("Você tem certeza que deseja remover o aluno?", "Confirmação de Remoção", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            
+            if (confirmacaoRemocao == DialogResult.Yes)
+            {
+                _repositorio.Remover(aluno.Id);
+                AtualizarGrid();
+            }
         }
     }
 }
